@@ -40,7 +40,8 @@ main: mov ax,@data
  mov bx,3
  imul bx  ; dx:ax=3*b^4 
  mov cx,ax
- mov al,a cbw  ; al->ax =>ax=a
+ mov al,a 
+ cbw  ; al->ax =>ax=a
  mov bx,ax ; bx=a 
  imul ax  ; dx:ax=a^2
  imul bx  ; dx:ax=bx*ax=a*a^2 = a^3 
