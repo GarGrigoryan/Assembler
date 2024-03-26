@@ -23,7 +23,7 @@ start:
         mov ax,a[si]
         mov bx,b[si]
         cmp ax,bx
-        ja a1 ; ax > bx
+        ja a1 ; ax > bx, yete uzumenq b) c[i]=max(a[i],b[i]): ja-i texy jb enq grum
         mov c[si],ax
         jmp a2; ax <= bx
 a1:     mov c[si],bx
